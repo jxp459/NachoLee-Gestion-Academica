@@ -47,15 +47,19 @@ public class Usuarios implements Serializable {
 	@Column(name = "numero_documento", length = 13, unique = true)
 	private String numero_documento;
 	
-	@Column(name = "id_usuario_padre", length = 13, unique = true)
-	private String id_usuario_padre;
+	@Column(name = "id_usuario_representante", length = 13, unique = true)
+	private String id_usuario_representante;
 	
 	@Transient
 	private String confirmPassword;
 
 	@ManyToMany(fetch = FetchType.LAZY)
-	@JoinTable(name = "rol_usuario", joinColumns = @JoinColumn(name = "id_usuarios"), inverseJoinColumns = @JoinColumn(name = "id_rol"))
+	//@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(name = "rol_usuario" ,joinColumns = @JoinColumn(name = "id_usuarios"), inverseJoinColumns = @JoinColumn(name = "id_rol"))
 	private Set<Rol> roles;
+	
+	
+	//private Set<Matriculas> matriculas;
 	/*
 	@ManyToOne(targetEntity = Cursos.class,fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	
@@ -151,12 +155,12 @@ public class Usuarios implements Serializable {
 		this.confirmPassword = confirmPassword;
 	}
 
-	public String getId_usuario_padre() {
-		return id_usuario_padre;
+	public String getId_usuario_representante() {
+		return id_usuario_representante;
 	}
 
-	public void setId_usuario_padre(String id_usuario_padre) {
-		this.id_usuario_padre = id_usuario_padre;
+	public void setId_usuario_representante(String id_usuario_representante) {
+		this.id_usuario_representante = id_usuario_representante;
 	}
 
 	public Set<Rol> getRoles() {

@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 import org.hibernate.annotations.GenericGenerator;
 @Entity
@@ -36,7 +37,8 @@ public class Cursos implements Serializable{
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "curso_materia", joinColumns = @JoinColumn(name="id_curso"), inverseJoinColumns =@JoinColumn(name="id_materia"))
 	private Set<Materia> materia;
-
+	
+/*
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "curso_usuario", joinColumns = @JoinColumn(name="id_curso"), inverseJoinColumns =@JoinColumn(name="id_usuario"))
 	private Set<Usuarios> usuarios;
@@ -48,7 +50,7 @@ public class Cursos implements Serializable{
 	public void setUsuarios(Set<Usuarios> usuarios) {
 		this.usuarios = usuarios;
 	}
-
+*/
 	public long getId_Curso() {
 		return id_Curso;
 	}
