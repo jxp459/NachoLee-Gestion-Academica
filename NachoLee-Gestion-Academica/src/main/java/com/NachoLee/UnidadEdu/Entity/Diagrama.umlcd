@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_O5eVIHuIEeqrIfllV0N9EQ">
+  <modelElement href="Diagrama.uml#_P7EVAHuIEeqrIfllV0N9EQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SepsEHuIEeqrIfllV0N9EQ" sourceAnchor="0.0,88.0" targetAnchor="246.0,105.0" target="_SetWcHuIEeqrIfllV0N9EQ" source="_SfUacHuIEeqrIfllV0N9EQ">
+    <modelElement href="Diagrama.uml#_QQwRIHuIEeqrIfllV0N9EQ"/>
+    <nameVisual xmi:id="_SeqTIHuIEeqrIfllV0N9EQ" text="">
+      <visualProperties xmi:id="_StCtYHuIEeqrIfllV0N9EQ" position="-1.0,-19.000000000000014"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SeqTIXuIEeqrIfllV0N9EQ" aggregationKind="NONE" name="materia" navigable="true">
+      <modelElement href="Diagrama.uml#_QQKbQHuIEeqrIfllV0N9EQ"/>
+      <visualProperties xmi:id="_StARIHuIEeqrIfllV0N9EQ" position="-81.0,2.0"/>
+      <stereotypes xmi:id="_woUm0HuzEeqrIfllV0N9EQ" name="FetchStrategy"/>
+      <stereotypes xmi:id="_woj3YHuzEeqrIfllV0N9EQ" name="JoinTable"/>
+      <stereotypes xmi:id="_wrvHMHuzEeqrIfllV0N9EQ" name="FetchStrategy"/>
+      <stereotypes xmi:id="_wtT0gHuzEeqrIfllV0N9EQ" name="JoinTable"/>
+      <visibility xmi:id="_SeqTInuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SeqTI3uIEeqrIfllV0N9EQ" label="1..*" max="-1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SeqTJHuIEeqrIfllV0N9EQ" aggregationKind="NONE" name="">
+      <modelElement href="Diagrama.uml#_QQvqEHuIEeqrIfllV0N9EQ"/>
+      <visualProperties xmi:id="_StDUcHuIEeqrIfllV0N9EQ" position="16.0,2.0"/>
+      <visibility xmi:id="_SeqTJXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SeqTJnuIEeqrIfllV0N9EQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SesvYHuIEeqrIfllV0N9EQ" sourceAnchor="272.0,107.0" targetAnchor="0.0,105.0" target="_SetWcHuIEeqrIfllV0N9EQ" source="_SggGMHuIEeqrIfllV0N9EQ">
+    <modelElement href="Diagrama.uml#_QQyGUHuIEeqrIfllV0N9EQ"/>
+    <nameVisual xmi:id="_SesvYXuIEeqrIfllV0N9EQ" text="">
+      <visualProperties xmi:id="_StO6oHuIEeqrIfllV0N9EQ" position="-1.0,2.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_SesvYnuIEeqrIfllV0N9EQ" aggregationKind="NONE" name="usuarios" navigable="true">
+      <modelElement href="Diagrama.uml#_QQNekHuIEeqrIfllV0N9EQ"/>
+      <visualProperties xmi:id="_StMeYHuIEeqrIfllV0N9EQ" position="39.0,-47.0"/>
+      <stereotypes xmi:id="_wqJy0HuzEeqrIfllV0N9EQ" name="FetchStrategy"/>
+      <stereotypes xmi:id="_wqPSYHuzEeqrIfllV0N9EQ" name="JoinTable"/>
+      <stereotypes xmi:id="_wtqZ0HuzEeqrIfllV0N9EQ" name="FetchStrategy"/>
+      <stereotypes xmi:id="_wtv5YHuzEeqrIfllV0N9EQ" name="JoinTable"/>
+      <visibility xmi:id="_SesvY3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SesvZHuIEeqrIfllV0N9EQ" label="1..*" max="-1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SesvZXuIEeqrIfllV0N9EQ" aggregationKind="NONE" name="">
+      <modelElement href="Diagrama.uml#_QQxfQXuIEeqrIfllV0N9EQ"/>
+      <visualProperties xmi:id="_StO6oXuIEeqrIfllV0N9EQ" position="-40.0,-47.0"/>
+      <visibility xmi:id="_SesvZnuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SesvZ3uIEeqrIfllV0N9EQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SfwfUHuIEeqrIfllV0N9EQ" sourceAnchor="0.0,13.0" targetAnchor="272.0,272.0" target="_SggGMHuIEeqrIfllV0N9EQ" source="_Sf30EHuIEeqrIfllV0N9EQ">
+    <modelElement href="Diagrama.uml#_QQpjcHuIEeqrIfllV0N9EQ"/>
+    <nameVisual xmi:id="_Sf0JsHuIEeqrIfllV0N9EQ" text="">
+      <visualProperties xmi:id="_StKCIHuIEeqrIfllV0N9EQ" position="-5.0,2.0000000000000284"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Sf0wwHuIEeqrIfllV0N9EQ" aggregationKind="NONE" name="roles" navigable="true">
+      <modelElement href="Diagrama.uml#_QPiwMHuIEeqrIfllV0N9EQ"/>
+      <visualProperties xmi:id="_StGXwHuIEeqrIfllV0N9EQ" position="-67.60000000000002,-47.00000000000003"/>
+      <stereotypes xmi:id="_Sf2l8XuIEeqrIfllV0N9EQ" name="FetchStrategy">
+        <modelElement href="Diagrama.uml#_QPlMcHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Sf2l8nuIEeqrIfllV0N9EQ" name="JoinTable">
+        <modelElement href="Diagrama.uml#_QPlzgHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Sf2l8HuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_Sf1-4HuIEeqrIfllV0N9EQ" label="1..*" max="-1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Sf0wwXuIEeqrIfllV0N9EQ" aggregationKind="NONE" name="">
+      <modelElement href="Diagrama.uml#_QQo8YXuIEeqrIfllV0N9EQ"/>
+      <visualProperties xmi:id="_StKCIXuIEeqrIfllV0N9EQ" position="19.875,2.0"/>
+      <visibility xmi:id="_Sf3NAHuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_Sf2l83uIEeqrIfllV0N9EQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SetWcHuIEeqrIfllV0N9EQ" name="Cursos" associationsIn="_SepsEHuIEeqrIfllV0N9EQ _SesvYHuIEeqrIfllV0N9EQ">
+    <modelElement href="Diagrama.uml#_P_eT4HuIEeqrIfllV0N9EQ"/>
+    <visualProperties xmi:id="_SetWcXuIEeqrIfllV0N9EQ" position="551.0,-51.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_SetWcnuIEeqrIfllV0N9EQ" name="JPA1StyledElement">
+      <modelElement href="Diagrama.uml#_P_gJEHuIEeqrIfllV0N9EQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_SetWc3uIEeqrIfllV0N9EQ" name="TechnicalSupplement">
+      <modelElement href="Diagrama.uml#_P_hXMHuIEeqrIfllV0N9EQ"/>
+    </stereotypes>
+    <visibility xmi:id="_SetWdHuIEeqrIfllV0N9EQ" label="+"/>
+    <attributes xmi:id="_SetWdXuIEeqrIfllV0N9EQ" name="id_Curso">
+      <modelElement href="Diagrama.uml#_QPo20HuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWdnuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_QPqsAHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SetWd3uIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_QPrTEHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWeHuIEeqrIfllV0N9EQ" label="-"/>
+      <cardinality xmi:id="_SetWeXuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SetWenuIEeqrIfllV0N9EQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SetWe3uIEeqrIfllV0N9EQ" name="nombre">
+      <modelElement href="Diagrama.uml#_QPshMnuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWfHuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QP4ucHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWfXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SetWfnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SetWf3uIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SetWgHuIEeqrIfllV0N9EQ" name="descripcion">
+      <modelElement href="Diagrama.uml#_QP6joHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWgXuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QQImEHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWgnuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SetWg3uIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SetWhHuIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SetWhXuIEeqrIfllV0N9EQ" name="materia">
+      <modelElement href="Diagrama.uml#_QQKbQHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWhnuIEeqrIfllV0N9EQ" name="FetchStrategy">
+        <modelElement href="Diagrama.uml#_QQLCUHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SetWh3uIEeqrIfllV0N9EQ" name="JoinTable">
+        <modelElement href="Diagrama.uml#_QQLpYHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWiHuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SetWiXuIEeqrIfllV0N9EQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_SetWinuIEeqrIfllV0N9EQ" name="Materia">
+        <modelElement href="Diagrama.uml#_P98p4HuIEeqrIfllV0N9EQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SetWi3uIEeqrIfllV0N9EQ" name="usuarios">
+      <modelElement href="Diagrama.uml#_QQNekHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWjHuIEeqrIfllV0N9EQ" name="FetchStrategy">
+        <modelElement href="Diagrama.uml#_QQOssHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SetWjXuIEeqrIfllV0N9EQ" name="JoinTable">
+        <modelElement href="Diagrama.uml#_QQPTwHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWjnuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SetWj3uIEeqrIfllV0N9EQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_SetWkHuIEeqrIfllV0N9EQ" name="Usuarios">
+        <modelElement href="Diagrama.uml#_P-5FEHuIEeqrIfllV0N9EQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SetWkXuIEeqrIfllV0N9EQ" name="getId_Curso">
+      <modelElement href="Diagrama.uml#_P_jzcHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWknuIEeqrIfllV0N9EQ" name="StyledElement">
+        <modelElement href="Diagrama.uml#_P_nd0HuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWk3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SetWlHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SetWlXuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P_kagHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SetWlnuIEeqrIfllV0N9EQ" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SetWl3uIEeqrIfllV0N9EQ" name="setId_Curso">
+      <modelElement href="Diagrama.uml#_P_oE4HuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWmHuIEeqrIfllV0N9EQ" name="StyledElement">
+        <modelElement href="Diagrama.uml#_P_pTAHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWmXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SetWmnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SetWm3uIEeqrIfllV0N9EQ" name="id_Curso">
+        <modelElement href="Diagrama.uml#_P_oE4XuIEeqrIfllV0N9EQ"/>
+        <cardinality xmi:id="_SetWnHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SetWnXuIEeqrIfllV0N9EQ" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SetWnnuIEeqrIfllV0N9EQ" name="toString">
+      <modelElement href="Diagrama.uml#_P_p6EHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWn3uIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_P_rIMHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SetWoHuIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_P_rvQHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWoXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SetWonuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SetWo3uIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P_qhIHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SetWpHuIEeqrIfllV0N9EQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SetWpXuIEeqrIfllV0N9EQ" name="hashCode">
+      <modelElement href="Diagrama.uml#_P_rvQnuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWpnuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_P_s9YHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SetWp3uIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_P_tkcHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWqHuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SetWqXuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SetWqnuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P_sWUHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SetWq3uIEeqrIfllV0N9EQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SetWrHuIEeqrIfllV0N9EQ" name="equals">
+      <modelElement href="Diagrama.uml#_QLG8IHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SetWrXuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_QLIKQHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SetWrnuIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_QLLNkHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SetWr3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SetWsHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SetWsXuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_QLHjMXuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SetWsnuIEeqrIfllV0N9EQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SetWs3uIEeqrIfllV0N9EQ" name="obj">
+        <modelElement href="Diagrama.uml#_QLHjMHuIEeqrIfllV0N9EQ"/>
+        <cardinality xmi:id="_SetWtHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SetWtXuIEeqrIfllV0N9EQ" name="Object">
+          <modelElement href="Diagrama.uml#_QJz7oXuIEeqrIfllV0N9EQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SfUacHuIEeqrIfllV0N9EQ" name="Materia" associationsOut="_SepsEHuIEeqrIfllV0N9EQ">
+    <modelElement href="Diagrama.uml#_P98p4HuIEeqrIfllV0N9EQ"/>
+    <visualProperties xmi:id="_SfUacXuIEeqrIfllV0N9EQ" position="929.0,-34.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_SfUacnuIEeqrIfllV0N9EQ" name="JPA1StyledElement">
+      <modelElement href="Diagrama.uml#_P9_tMHuIEeqrIfllV0N9EQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_SfUac3uIEeqrIfllV0N9EQ" name="TechnicalSupplement">
+      <modelElement href="Diagrama.uml#_P-Fz0HuIEeqrIfllV0N9EQ"/>
+    </stereotypes>
+    <visibility xmi:id="_SfUadHuIEeqrIfllV0N9EQ" label="+"/>
+    <attributes xmi:id="_SfUadXuIEeqrIfllV0N9EQ" name="id_materia">
+      <modelElement href="Diagrama.uml#_QLZ3EHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SfUadnuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_QLbsQHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SfUad3uIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_QLcTUHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SfUaeHuIEeqrIfllV0N9EQ" label="-"/>
+      <cardinality xmi:id="_SfUaeXuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SfUaenuIEeqrIfllV0N9EQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SfUae3uIEeqrIfllV0N9EQ" name="nombre">
+      <modelElement href="Diagrama.uml#_QLevkHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SfUafHuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QLsyAHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SfUafXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SfUafnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SfUaf3uIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SfUagHuIEeqrIfllV0N9EQ" name="Descripcion">
+      <modelElement href="Diagrama.uml#_QLy4oHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SfUagXuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QMHBsHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SfUagnuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SfUag3uIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SfUahHuIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SfUahXuIEeqrIfllV0N9EQ" name="getId_materia">
+      <modelElement href="Diagrama.uml#_P-IQEHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SfUahnuIEeqrIfllV0N9EQ" name="StyledElement">
+        <modelElement href="Diagrama.uml#_P-KFQHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SfUah3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SfUaiHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SfUaiXuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P-I3IHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SfUainuIEeqrIfllV0N9EQ" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SfUai3uIEeqrIfllV0N9EQ" name="setId_materia">
+      <modelElement href="Diagrama.uml#_P-KsUHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SfUajHuIEeqrIfllV0N9EQ" name="StyledElement">
+        <modelElement href="Diagrama.uml#_P-LTYHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SfUajXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SfUajnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_SfUaj3uIEeqrIfllV0N9EQ" name="id_materia">
+        <modelElement href="Diagrama.uml#_P-KsUXuIEeqrIfllV0N9EQ"/>
+        <cardinality xmi:id="_SfUakHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SfUakXuIEeqrIfllV0N9EQ" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SfUaknuIEeqrIfllV0N9EQ" name="toString">
+      <modelElement href="Diagrama.uml#_P-L6cHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SfUak3uIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_P-NIkHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SfUalHuIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_P-NvoHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SfUalXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SfUalnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SfUal3uIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P-MhgHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SfUamHuIEeqrIfllV0N9EQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SfUamXuIEeqrIfllV0N9EQ" name="hashCode">
+      <modelElement href="Diagrama.uml#_P-O9wXuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SfUamnuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_P-RaAHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SfUam3uIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_P-SBEHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SfUanHuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SfUanXuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SfUannuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P-Pk0HuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SfUan3uIEeqrIfllV0N9EQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SfUaoHuIEeqrIfllV0N9EQ" name="equals">
+      <modelElement href="Diagrama.uml#_QKFBYHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SfUaoXuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_QKIrwHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SfUaonuIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_QKJS0HuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SfUao3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SfUapHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SfUapXuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_QKG2kHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SfUapnuIEeqrIfllV0N9EQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SfUap3uIEeqrIfllV0N9EQ" name="obj">
+        <modelElement href="Diagrama.uml#_QKFBYXuIEeqrIfllV0N9EQ"/>
+        <cardinality xmi:id="_SfUaqHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SfUaqXuIEeqrIfllV0N9EQ" name="Object">
+          <modelElement href="Diagrama.uml#_QJz7oXuIEeqrIfllV0N9EQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SggGMHuIEeqrIfllV0N9EQ" name="Usuarios" associationsIn="_SfwfUHuIEeqrIfllV0N9EQ" associationsOut="_SesvYHuIEeqrIfllV0N9EQ">
+    <modelElement href="Diagrama.uml#_P-5FEHuIEeqrIfllV0N9EQ"/>
+    <visualProperties xmi:id="_SggGMXuIEeqrIfllV0N9EQ" position="103.0,-53.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_SggGMnuIEeqrIfllV0N9EQ" name="JPA1StyledElement">
+      <modelElement href="Diagrama.uml#_P-66QHuIEeqrIfllV0N9EQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_SggGM3uIEeqrIfllV0N9EQ" name="TechnicalSupplement">
+      <modelElement href="Diagrama.uml#_P-8IYHuIEeqrIfllV0N9EQ"/>
+    </stereotypes>
+    <visibility xmi:id="_SggGNHuIEeqrIfllV0N9EQ" label="+"/>
+    <attributes xmi:id="_SggGNXuIEeqrIfllV0N9EQ" name="id_usuarios">
+      <modelElement href="Diagrama.uml#_QM32sHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGNnuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_QM5r4HuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_SggGN3uIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_QM8vMHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGOHuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGOXuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGOnuIEeqrIfllV0N9EQ" name="Long">
+        <modelElement href="Diagrama.uml#_QKWHIHuIEeqrIfllV0N9EQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGO3uIEeqrIfllV0N9EQ" name="nombres">
+      <modelElement href="Diagrama.uml#_QM-kYHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGPHuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QNOcAHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGPXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGPnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGP3uIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGQHuIEeqrIfllV0N9EQ" name="apellidos">
+      <modelElement href="Diagrama.uml#_QNQRMHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGQXuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QNeToHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGQnuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGQ3uIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGRHuIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGRXuIEeqrIfllV0N9EQ" name="correo">
+      <modelElement href="Diagrama.uml#_QNgI0HuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGRnuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QN5KYHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGR3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGSHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGSXuIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGSnuIEeqrIfllV0N9EQ" name="usuario">
+      <modelElement href="Diagrama.uml#_QOEwkHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGS3uIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QOSL8HuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGTHuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGTXuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGTnuIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGT3uIEeqrIfllV0N9EQ" name="contraseña">
+      <modelElement href="Diagrama.uml#_QOVPQHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGUHuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QOiDkHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGUXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGUnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGU3uIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGVHuIEeqrIfllV0N9EQ" name="tipo_documento">
+      <modelElement href="Diagrama.uml#_QOj4wHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGVXuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QOzwYHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGVnuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGV3uIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGWHuIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGWXuIEeqrIfllV0N9EQ" name="numero_documento">
+      <modelElement href="Diagrama.uml#_QO1lkHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGWnuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QPOAEHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGW3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGXHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGXXuIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGXnuIEeqrIfllV0N9EQ" name="id_usuario_padre">
+      <modelElement href="Diagrama.uml#_QPPOMHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGX3uIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QPfF0HuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGYHuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGYXuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGYnuIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGY3uIEeqrIfllV0N9EQ" name="confirmPassword">
+      <modelElement href="Diagrama.uml#_QPg7AHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_SggGZHuIEeqrIfllV0N9EQ" name="Transient">
+        <modelElement href="Diagrama.uml#_QPhiEHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGZXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGZnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_SggGZ3uIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SggGaHuIEeqrIfllV0N9EQ" name="roles">
+      <modelElement href="Diagrama.uml#_QPiwMHuIEeqrIfllV0N9EQ"/>
+      <visibility xmi:id="_SggGaXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGanuIEeqrIfllV0N9EQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_SggGa3uIEeqrIfllV0N9EQ" name="Rol">
+        <modelElement href="Diagrama.uml#_P-ZV0HuIEeqrIfllV0N9EQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SggGbHuIEeqrIfllV0N9EQ" name="Usuarios">
+      <modelElement href="Diagrama.uml#_P_CPAHuIEeqrIfllV0N9EQ"/>
+      <keywords xmi:id="_SggGbXuIEeqrIfllV0N9EQ" keyword="create"/>
+      <stereotypes xmi:id="_SggGbnuIEeqrIfllV0N9EQ" name="StyledElement">
+        <modelElement href="Diagrama.uml#_P_DdIHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGb3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGcHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SggGcXuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P_C2EnuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SggGcnuIEeqrIfllV0N9EQ" name="Usuarios">
+          <modelElement href="Diagrama.uml#_P-5FEHuIEeqrIfllV0N9EQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SggGc3uIEeqrIfllV0N9EQ" name="Usuarios">
+      <modelElement href="Diagrama.uml#_QK5gwHuIEeqrIfllV0N9EQ"/>
+      <keywords xmi:id="_SggGdHuIEeqrIfllV0N9EQ" keyword="create"/>
+      <stereotypes xmi:id="_SggGdXuIEeqrIfllV0N9EQ" name="StyledElement">
+        <modelElement href="Diagrama.uml#_QK7V8HuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_SggGdnuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_SggGd3uIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_SggGeHuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_QK6u4nuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_SggGeXuIEeqrIfllV0N9EQ" name="Usuarios">
+          <modelElement href="Diagrama.uml#_P-5FEHuIEeqrIfllV0N9EQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SggGenuIEeqrIfllV0N9EQ" name="id_usuarios">
+        <modelElement href="Diagrama.uml#_QK6H0HuIEeqrIfllV0N9EQ"/>
+        <cardinality xmi:id="_SggGe3uIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+        <type xmi:id="_SggGfHuIEeqrIfllV0N9EQ" name="Long">
+          <modelElement href="Diagrama.uml#_QKWHIHuIEeqrIfllV0N9EQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Sf30EHuIEeqrIfllV0N9EQ" name="Rol" associationsOut="_SfwfUHuIEeqrIfllV0N9EQ">
+    <modelElement href="Diagrama.uml#_P-ZV0HuIEeqrIfllV0N9EQ"/>
+    <visualProperties xmi:id="_Sf30EXuIEeqrIfllV0N9EQ" position="550.0,206.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_Sf30EnuIEeqrIfllV0N9EQ" name="JPA1StyledElement">
+      <modelElement href="Diagrama.uml#_P-bLAHuIEeqrIfllV0N9EQ"/>
+    </stereotypes>
+    <stereotypes xmi:id="_Sf30E3uIEeqrIfllV0N9EQ" name="TechnicalSupplement">
+      <modelElement href="Diagrama.uml#_P-byEHuIEeqrIfllV0N9EQ"/>
+    </stereotypes>
+    <visibility xmi:id="_Sf30FHuIEeqrIfllV0N9EQ" label="+"/>
+    <attributes xmi:id="_Sf30FXuIEeqrIfllV0N9EQ" name="id_rol">
+      <modelElement href="Diagrama.uml#_QMJd8HuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_Sf30FnuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_QMKFAHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Sf30F3uIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_QMKsEHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Sf30GHuIEeqrIfllV0N9EQ" label="-"/>
+      <cardinality xmi:id="_Sf30GXuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_Sf30GnuIEeqrIfllV0N9EQ" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sf30G3uIEeqrIfllV0N9EQ" name="nombre">
+      <modelElement href="Diagrama.uml#_QMLTJHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_Sf30HHuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QMmw8HuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Sf30HXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_Sf30HnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_Sf30H3uIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Sf30IHuIEeqrIfllV0N9EQ" name="descripcion">
+      <modelElement href="Diagrama.uml#_QMn_EHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_Sf30IXuIEeqrIfllV0N9EQ" name="Column">
+        <modelElement href="Diagrama.uml#_QM0zYHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Sf30InuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_Sf30I3uIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <type xmi:id="_Sf30JHuIEeqrIfllV0N9EQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Sf30JXuIEeqrIfllV0N9EQ" name="getId_rol">
+      <modelElement href="Diagrama.uml#_P-fccHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_Sf30JnuIEeqrIfllV0N9EQ" name="StyledElement">
+        <modelElement href="Diagrama.uml#_P-h4sHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Sf30J3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_Sf30KHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sf30KXuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P-gDgHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_Sf30KnuIEeqrIfllV0N9EQ" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Sf30K3uIEeqrIfllV0N9EQ" name="setId_rol">
+      <modelElement href="Diagrama.uml#_P-ifwHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_Sf30LHuIEeqrIfllV0N9EQ" name="StyledElement">
+        <modelElement href="Diagrama.uml#_P-jt4HuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Sf30LXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_Sf30LnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Sf30L3uIEeqrIfllV0N9EQ" name="id_rol">
+        <modelElement href="Diagrama.uml#_P-ifwXuIEeqrIfllV0N9EQ"/>
+        <cardinality xmi:id="_Sf30MHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Sf30MXuIEeqrIfllV0N9EQ" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Sf30MnuIEeqrIfllV0N9EQ" name="hashCode">
+      <modelElement href="Diagrama.uml#_P-kU8HuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_Sf30M3uIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_P-mKIHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Sf30NHuIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_P-wiMHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Sf30NXuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_Sf30NnuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sf30N3uIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P-k8AHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_Sf30OHuIEeqrIfllV0N9EQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Sf30OXuIEeqrIfllV0N9EQ" name="toString">
+      <modelElement href="Diagrama.uml#_P-xwUHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_Sf30OnuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_P-y-cXuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Sf30O3uIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_P-zlgHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Sf30PHuIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_Sf30PXuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sf30PnuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_P-y-cHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_Sf30P3uIEeqrIfllV0N9EQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Sf30QHuIEeqrIfllV0N9EQ" name="equals">
+      <modelElement href="Diagrama.uml#_QKPZcHuIEeqrIfllV0N9EQ"/>
+      <stereotypes xmi:id="_Sf30QXuIEeqrIfllV0N9EQ" name="LegacyStyledElement">
+        <modelElement href="Diagrama.uml#_QKQAgXuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Sf30QnuIEeqrIfllV0N9EQ" name="Annotations">
+        <modelElement href="Diagrama.uml#_QKQnkHuIEeqrIfllV0N9EQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Sf30Q3uIEeqrIfllV0N9EQ" label="+"/>
+      <cardinality xmi:id="_Sf30RHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Sf30RXuIEeqrIfllV0N9EQ">
+        <modelElement href="Diagrama.uml#_QKQAgHuIEeqrIfllV0N9EQ"/>
+        <type xmi:id="_Sf30RnuIEeqrIfllV0N9EQ" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Sf30R3uIEeqrIfllV0N9EQ" name="obj">
+        <modelElement href="Diagrama.uml#_QKPZcXuIEeqrIfllV0N9EQ"/>
+        <cardinality xmi:id="_Sf30SHuIEeqrIfllV0N9EQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Sf30SXuIEeqrIfllV0N9EQ" name="Object">
+          <modelElement href="Diagrama.uml#_QJz7oXuIEeqrIfllV0N9EQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
