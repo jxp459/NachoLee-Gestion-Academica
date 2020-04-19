@@ -8,6 +8,6 @@ class NachoLeeGestionAcademicaApplicationTests {
 
 	@Test
 	void contextLoads() {
-	}
+	}	
 
 }
