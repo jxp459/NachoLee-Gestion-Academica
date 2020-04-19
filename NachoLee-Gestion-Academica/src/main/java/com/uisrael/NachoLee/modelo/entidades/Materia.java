@@ -9,8 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.hibernate.annotations.GenericGenerator;
+
 @Entity
-public class Materia implements Serializable{
+public class Materia implements Serializable {
 
 	/**
 	 * 
@@ -25,28 +26,46 @@ public class Materia implements Serializable{
 	private String nombre;
 	@Column(length = 50)
 	private String Descripcion;
+
+	public Materia() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Materia(long id_materia) {
+		super();
+		this.id_materia = id_materia;
+	}
+
 	public long getId_materia() {
 		return id_materia;
 	}
+
 	public void setId_materia(long id_materia) {
 		this.id_materia = id_materia;
 	}
+
 	public String getNombre() {
 		return nombre;
 	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
 	public String getDescripcion() {
 		return Descripcion;
 	}
+
 	public void setDescripcion(String descripcion) {
 		Descripcion = descripcion;
 	}
+
 	@Override
 	public String toString() {
 		return "Materia [id_materia=" + id_materia + ", nombre=" + nombre + ", Descripcion=" + Descripcion + "]";
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -56,6 +75,7 @@ public class Materia implements Serializable{
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -79,6 +99,5 @@ public class Materia implements Serializable{
 			return false;
 		return true;
 	}
-	
-	
+
 }

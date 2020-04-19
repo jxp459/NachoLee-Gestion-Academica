@@ -14,8 +14,9 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 import org.hibernate.annotations.GenericGenerator;
+
 @Entity
-public class Cursos implements Serializable{
+public class Cursos implements Serializable {
 
 	/**
 	 * 
@@ -26,30 +27,27 @@ public class Cursos implements Serializable{
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
 	private long id_Curso;
-	
+
 	@Column(length = 25, unique = true)
 	private String nombre;
-	
+
 	@Column(length = 50)
 	private String descripcion;
-	
+
 	@ManyToMany(fetch = FetchType.LAZY)
-	@JoinTable(name = "curso_materia", joinColumns = @JoinColumn(name="id_curso"), inverseJoinColumns =@JoinColumn(name="id_materia"))
+	@JoinTable(name = "curso_materia", joinColumns = @JoinColumn(name = "id_curso"), inverseJoinColumns = @JoinColumn(name = "id_materia"))
 	private Set<Materia> materia;
-	
-/*
-	@ManyToMany(fetch = FetchType.LAZY)
-	@JoinTable(name = "curso_usuario", joinColumns = @JoinColumn(name="id_curso"), inverseJoinColumns =@JoinColumn(name="id_usuario"))
-	private Set<Usuarios> usuarios;
-	
-	public Set<Usuarios> getUsuarios() {
-		return usuarios;
+
+	public Cursos() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
-	public void setUsuarios(Set<Usuarios> usuarios) {
-		this.usuarios = usuarios;
+	public Cursos(long id_Curso) {
+		super();
+		this.id_Curso = id_Curso;
 	}
-*/
+
 	public long getId_Curso() {
 		return id_Curso;
 	}
@@ -127,6 +125,5 @@ public class Cursos implements Serializable{
 			return false;
 		return true;
 	}
-	
-	
+
 }
