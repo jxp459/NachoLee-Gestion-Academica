@@ -1,4 +1,4 @@
-package com.NachoLee.UnidadEdu.Entity;
+package com.uisrael.NachoLee.modelo.entidades;
 
 import java.io.Serializable;
 
