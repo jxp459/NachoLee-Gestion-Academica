@@ -1,6 +1,7 @@
 package com.uisrael.NachoLee.modelo.entidades;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -24,7 +25,8 @@ public class Usuarios implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
-	private Long id_usuarios;
+	@Column(name="id_usuarios")
+	private Long idUsuarios;
 
 	@Column(name = "nombres", length = 25)
 	private String nombres;
@@ -42,13 +44,16 @@ public class Usuarios implements Serializable {
 	private String contraseña;
 
 	@Column(name = "tipo_documento", length = 1)
-	private String tipo_documento;
+	private String tipoDocumento;
 
+	@Column(name="fecha_nacimiento")
+	private Date fechaNacimiento;
+	
 	@Column(name = "numero_documento", length = 13, unique = true)
-	private String numero_documento;
+	private String numeroDocumento;
 
 	@Column(name = "id_usuario_representante", length = 13, unique = true)
-	private String id_usuario_representante;
+	private String idUsuarioRepresentante;
 
 	@Transient
 	private String confirmPassword;
@@ -62,17 +67,17 @@ public class Usuarios implements Serializable {
 		super();
 	}
 
-	public Usuarios(Long id_usuarios) {
+	public Usuarios(Long idUsuarios) {
 		super();
-		this.id_usuarios = id_usuarios;
+		this.idUsuarios = idUsuarios;
 	}
 
-	public Long getId_usuarios() {
-		return id_usuarios;
+	public Long getIdUsuarios() {
+		return idUsuarios;
 	}
 
-	public void setId_usuarios(Long id_usuarios) {
-		this.id_usuarios = id_usuarios;
+	public void setIdUsuarios(Long idUsuarios) {
+		this.idUsuarios = idUsuarios;
 	}
 
 	public String getNombres() {
@@ -115,20 +120,20 @@ public class Usuarios implements Serializable {
 		this.contraseña = contraseña;
 	}
 
-	public String getTipo_documento() {
-		return tipo_documento;
+	public String getTipoDocumento() {
+		return tipoDocumento;
 	}
 
-	public void setTipo_documento(String tipo_documento) {
-		this.tipo_documento = tipo_documento;
+	public void setTipoDocumento(String tipoDocumento) {
+		this.tipoDocumento = tipoDocumento;
 	}
 
-	public String getNumero_documento() {
-		return numero_documento;
+	public String getNumeroDocumento() {
+		return numeroDocumento;
 	}
 
-	public void setNumero_documento(String numero_documento) {
-		this.numero_documento = numero_documento;
+	public void setNumeroDocumento(String numeroDocumento) {
+		this.numeroDocumento = numeroDocumento;
 	}
 
 	public String getConfirmPassword() {
@@ -139,12 +144,12 @@ public class Usuarios implements Serializable {
 		this.confirmPassword = confirmPassword;
 	}
 
-	public String getId_usuario_representante() {
-		return id_usuario_representante;
+	public String getIdUsuarioRepresentante() {
+		return idUsuarioRepresentante;
 	}
 
-	public void setId_usuario_representante(String id_usuario_representante) {
-		this.id_usuario_representante = id_usuario_representante;
+	public void setIdUsuarioRepresentante(String idUsuarioRepresentante) {
+		this.idUsuarioRepresentante = idUsuarioRepresentante;
 	}
 
 	public Set<Rol> getRoles() {
@@ -157,10 +162,11 @@ public class Usuarios implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Usuarios [id_usuarios=" + id_usuarios + ", nombres=" + nombres + ", apellidos=" + apellidos
-				+ ", correo=" + correo + ", usuario=" + usuario + ", contraseña=" + contraseña + ", tipo_documento="
-				+ tipo_documento + ", numero_documento=" + numero_documento + ", id_usuario_representante="
-				+ id_usuario_representante + ", confirmPassword=" + confirmPassword + ", roles=" + roles + "]";
+		return "Usuarios [idUsuarios=" + idUsuarios + ", nombres=" + nombres + ", apellidos=" + apellidos + ", correo="
+				+ correo + ", usuario=" + usuario + ", contraseña=" + contraseña + ", tipoDocumento=" + tipoDocumento
+				+ ", fechaNacimiento=" + fechaNacimiento + ", numeroDocumento=" + numeroDocumento
+				+ ", idUsuarioRepresentante=" + idUsuarioRepresentante + ", confirmPassword=" + confirmPassword
+				+ ", roles=" + roles + "]";
 	}
 
 	@Override
@@ -171,12 +177,13 @@ public class Usuarios implements Serializable {
 		result = prime * result + ((confirmPassword == null) ? 0 : confirmPassword.hashCode());
 		result = prime * result + ((contraseña == null) ? 0 : contraseña.hashCode());
 		result = prime * result + ((correo == null) ? 0 : correo.hashCode());
-		result = prime * result + ((id_usuario_representante == null) ? 0 : id_usuario_representante.hashCode());
-		result = prime * result + ((id_usuarios == null) ? 0 : id_usuarios.hashCode());
+		result = prime * result + ((fechaNacimiento == null) ? 0 : fechaNacimiento.hashCode());
+		result = prime * result + ((idUsuarioRepresentante == null) ? 0 : idUsuarioRepresentante.hashCode());
+		result = prime * result + ((idUsuarios == null) ? 0 : idUsuarios.hashCode());
 		result = prime * result + ((nombres == null) ? 0 : nombres.hashCode());
-		result = prime * result + ((numero_documento == null) ? 0 : numero_documento.hashCode());
+		result = prime * result + ((numeroDocumento == null) ? 0 : numeroDocumento.hashCode());
 		result = prime * result + ((roles == null) ? 0 : roles.hashCode());
-		result = prime * result + ((tipo_documento == null) ? 0 : tipo_documento.hashCode());
+		result = prime * result + ((tipoDocumento == null) ? 0 : tipoDocumento.hashCode());
 		result = prime * result + ((usuario == null) ? 0 : usuario.hashCode());
 		return result;
 	}
@@ -210,35 +217,40 @@ public class Usuarios implements Serializable {
 				return false;
 		} else if (!correo.equals(other.correo))
 			return false;
-		if (id_usuario_representante == null) {
-			if (other.id_usuario_representante != null)
+		if (fechaNacimiento == null) {
+			if (other.fechaNacimiento != null)
 				return false;
-		} else if (!id_usuario_representante.equals(other.id_usuario_representante))
+		} else if (!fechaNacimiento.equals(other.fechaNacimiento))
 			return false;
-		if (id_usuarios == null) {
-			if (other.id_usuarios != null)
+		if (idUsuarioRepresentante == null) {
+			if (other.idUsuarioRepresentante != null)
 				return false;
-		} else if (!id_usuarios.equals(other.id_usuarios))
+		} else if (!idUsuarioRepresentante.equals(other.idUsuarioRepresentante))
+			return false;
+		if (idUsuarios == null) {
+			if (other.idUsuarios != null)
+				return false;
+		} else if (!idUsuarios.equals(other.idUsuarios))
 			return false;
 		if (nombres == null) {
 			if (other.nombres != null)
 				return false;
 		} else if (!nombres.equals(other.nombres))
 			return false;
-		if (numero_documento == null) {
-			if (other.numero_documento != null)
+		if (numeroDocumento == null) {
+			if (other.numeroDocumento != null)
 				return false;
-		} else if (!numero_documento.equals(other.numero_documento))
+		} else if (!numeroDocumento.equals(other.numeroDocumento))
 			return false;
 		if (roles == null) {
 			if (other.roles != null)
 				return false;
 		} else if (!roles.equals(other.roles))
 			return false;
-		if (tipo_documento == null) {
-			if (other.tipo_documento != null)
+		if (tipoDocumento == null) {
+			if (other.tipoDocumento != null)
 				return false;
-		} else if (!tipo_documento.equals(other.tipo_documento))
+		} else if (!tipoDocumento.equals(other.tipoDocumento))
 			return false;
 		if (usuario == null) {
 			if (other.usuario != null)

@@ -21,7 +21,8 @@ public class Materia implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
-	private long id_materia;
+	@Column(name="id_materia")
+	private long idMateria;
 	@Column(length = 30, unique = true)
 	private String nombre;
 	@Column(length = 50)
@@ -32,17 +33,17 @@ public class Materia implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Materia(long id_materia) {
+	public Materia(long idMateria) {
 		super();
-		this.id_materia = id_materia;
+		this.idMateria = idMateria;
 	}
 
-	public long getId_materia() {
-		return id_materia;
+	public long getIdMateria() {
+		return idMateria;
 	}
 
-	public void setId_materia(long id_materia) {
-		this.id_materia = id_materia;
+	public void setIdMateria(long idMateria) {
+		this.idMateria = idMateria;
 	}
 
 	public String getNombre() {
@@ -63,7 +64,7 @@ public class Materia implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Materia [id_materia=" + id_materia + ", nombre=" + nombre + ", Descripcion=" + Descripcion + "]";
+		return "Materia [id_materia=" + idMateria + ", nombre=" + nombre + ", Descripcion=" + Descripcion + "]";
 	}
 
 	@Override
@@ -71,7 +72,7 @@ public class Materia implements Serializable {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((Descripcion == null) ? 0 : Descripcion.hashCode());
-		result = prime * result + (int) (id_materia ^ (id_materia >>> 32));
+		result = prime * result + (int) (idMateria ^ (idMateria >>> 32));
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
 		return result;
 	}
@@ -90,7 +91,7 @@ public class Materia implements Serializable {
 				return false;
 		} else if (!Descripcion.equals(other.Descripcion))
 			return false;
-		if (id_materia != other.id_materia)
+		if (idMateria != other.idMateria)
 			return false;
 		if (nombre == null) {
 			if (other.nombre != null)

@@ -22,7 +22,8 @@ public class Rol implements Serializable {
 
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
-	private long id_rol;
+	@Column(name="id_rol")
+	private long idRol;
 
 	@Column
 	private String nombre;
@@ -35,17 +36,17 @@ public class Rol implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Rol(long id_rol) {
+	public Rol(long idRol) {
 		super();
-		this.id_rol = id_rol;
+		this.idRol = idRol;
 	}
 
-	public long getId_rol() {
-		return id_rol;
+	public long getIdRol() {
+		return idRol;
 	}
 
-	public void setId_rol(long id_rol) {
-		this.id_rol = id_rol;
+	public void setIdRol(long idRol) {
+		this.idRol = idRol;
 	}
 
 	public String getNombre() {
@@ -69,7 +70,7 @@ public class Rol implements Serializable {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((descripcion == null) ? 0 : descripcion.hashCode());
-		result = prime * result + (int) (id_rol ^ (id_rol >>> 32));
+		result = prime * result + (int) (idRol ^ (idRol >>> 32));
 		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
 		return result;
 	}
@@ -88,7 +89,7 @@ public class Rol implements Serializable {
 				return false;
 		} else if (!descripcion.equals(other.descripcion))
 			return false;
-		if (id_rol != other.id_rol)
+		if (idRol != other.idRol)
 			return false;
 		if (nombre == null) {
 			if (other.nombre != null)
@@ -100,7 +101,7 @@ public class Rol implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Role [id=" + id_rol + ", name=" + nombre + ", descripcion=" + descripcion + "]";
+		return "Role [id=" + idRol + ", name=" + nombre + ", descripcion=" + descripcion + "]";
 	}
 
 }

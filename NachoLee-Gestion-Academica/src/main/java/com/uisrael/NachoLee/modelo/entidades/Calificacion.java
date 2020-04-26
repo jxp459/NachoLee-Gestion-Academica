@@ -19,18 +19,18 @@ public class Calificacion implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-
-	private long id_calificacion;
+	@Column(name = "id_calificacion")
+	private long idCalificacion;
 	@Column(name = "nota_deberes")
-	private String nota_deberes;
+	private String notaDeberes;
 	@Column(name = "nota_trabajos_clase")
-	private String nota_trabajos_clase;
+	private String notaTrabajos_clase;
 	@Column(name = "nota_trabajos_grupales")
-	private String nota_trabajos_grupales;
+	private String notaTrabajosGrupales;
 	@Column(name = "nota_examen")
-	private String nota_examen;
+	private String notaExamen;
 	@Column(name = "calificacion_final")
-	private String calificacion_final;
+	private String calificacionFinal;
 	@ManyToOne
 	@JoinColumn(name = "id_materia", referencedColumnName = "id_materia", insertable = false, updatable = false)
 	private Materia materias;
@@ -44,57 +44,57 @@ public class Calificacion implements Serializable {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Calificacion(long id_calificacion) {
+	public Calificacion(long idCalificacion) {
 		super();
-		this.id_calificacion = id_calificacion;
+		this.idCalificacion = idCalificacion;
 	}
 
-	public long getId_calificacion() {
-		return id_calificacion;
+	public long getIdCalificacion() {
+		return idCalificacion;
 	}
 
-	public void setId_calificacion(long id_calificacion) {
-		this.id_calificacion = id_calificacion;
+	public void setIdCalificacion(long idCalificacion) {
+		this.idCalificacion = idCalificacion;
 	}
 
-	public String getNota_deberes() {
-		return nota_deberes;
+	public String getNotaDeberes() {
+		return notaDeberes;
 	}
 
-	public void setNota_deberes(String nota_deberes) {
-		this.nota_deberes = nota_deberes;
+	public void setNotaDeberes(String notaDeberes) {
+		this.notaDeberes = notaDeberes;
 	}
 
-	public String getNota_trabajos_clase() {
-		return nota_trabajos_clase;
+	public String getNotaTrabajos_clase() {
+		return notaTrabajos_clase;
 	}
 
-	public void setNota_trabajos_clase(String nota_trabajos_clase) {
-		this.nota_trabajos_clase = nota_trabajos_clase;
+	public void setNotaTrabajos_clase(String notaTrabajos_clase) {
+		this.notaTrabajos_clase = notaTrabajos_clase;
 	}
 
-	public String getNota_trabajos_grupales() {
-		return nota_trabajos_grupales;
+	public String getNotaTrabajosGrupales() {
+		return notaTrabajosGrupales;
 	}
 
-	public void setNota_trabajos_grupales(String nota_trabajos_grupales) {
-		this.nota_trabajos_grupales = nota_trabajos_grupales;
+	public void setNotaTrabajosGrupales(String notaTrabajosGrupales) {
+		this.notaTrabajosGrupales = notaTrabajosGrupales;
 	}
 
-	public String getNota_examen() {
-		return nota_examen;
+	public String getNotaExamen() {
+		return notaExamen;
 	}
 
-	public void setNota_examen(String nota_examen) {
-		this.nota_examen = nota_examen;
+	public void setNotaExamen(String notaExamen) {
+		this.notaExamen = notaExamen;
 	}
 
-	public String getCalificacion_final() {
-		return calificacion_final;
+	public String getCalificacionFinal() {
+		return calificacionFinal;
 	}
 
-	public void setCalificacion_final(String calificacion_final) {
-		this.calificacion_final = calificacion_final;
+	public void setCalificacionFinal(String calificacionFinal) {
+		this.calificacionFinal = calificacionFinal;
 	}
 
 	public Materia getMaterias() {
@@ -115,24 +115,24 @@ public class Calificacion implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Calificacion [id_calificacion=" + id_calificacion + ", nota_deberes=" + nota_deberes
-				+ ", nota_trabajos_clase=" + nota_trabajos_clase + ", nota_trabajos_grupales=" + nota_trabajos_grupales
-				+ ", nota_examen=" + nota_examen + ", calificacion_final=" + calificacion_final + ", materias="
-				+ materias + ", matriculas=" + matriculas + "]";
+		return "Calificacion [idCalificacion=" + idCalificacion + ", notaDeberes=" + notaDeberes
+				+ ", notaTrabajos_clase=" + notaTrabajos_clase + ", notaTrabajosGrupales=" + notaTrabajosGrupales
+				+ ", notaExamen=" + notaExamen + ", calificacionFinal=" + calificacionFinal + ", materias=" + materias
+				+ ", matriculas=" + matriculas + "]";
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((calificacion_final == null) ? 0 : calificacion_final.hashCode());
-		result = prime * result + (int) (id_calificacion ^ (id_calificacion >>> 32));
+		result = prime * result + ((calificacionFinal == null) ? 0 : calificacionFinal.hashCode());
+		result = prime * result + (int) (idCalificacion ^ (idCalificacion >>> 32));
 		result = prime * result + ((materias == null) ? 0 : materias.hashCode());
 		result = prime * result + ((matriculas == null) ? 0 : matriculas.hashCode());
-		result = prime * result + ((nota_deberes == null) ? 0 : nota_deberes.hashCode());
-		result = prime * result + ((nota_examen == null) ? 0 : nota_examen.hashCode());
-		result = prime * result + ((nota_trabajos_clase == null) ? 0 : nota_trabajos_clase.hashCode());
-		result = prime * result + ((nota_trabajos_grupales == null) ? 0 : nota_trabajos_grupales.hashCode());
+		result = prime * result + ((notaDeberes == null) ? 0 : notaDeberes.hashCode());
+		result = prime * result + ((notaExamen == null) ? 0 : notaExamen.hashCode());
+		result = prime * result + ((notaTrabajosGrupales == null) ? 0 : notaTrabajosGrupales.hashCode());
+		result = prime * result + ((notaTrabajos_clase == null) ? 0 : notaTrabajos_clase.hashCode());
 		return result;
 	}
 
@@ -145,12 +145,12 @@ public class Calificacion implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Calificacion other = (Calificacion) obj;
-		if (calificacion_final == null) {
-			if (other.calificacion_final != null)
+		if (calificacionFinal == null) {
+			if (other.calificacionFinal != null)
 				return false;
-		} else if (!calificacion_final.equals(other.calificacion_final))
+		} else if (!calificacionFinal.equals(other.calificacionFinal))
 			return false;
-		if (id_calificacion != other.id_calificacion)
+		if (idCalificacion != other.idCalificacion)
 			return false;
 		if (materias == null) {
 			if (other.materias != null)
@@ -162,27 +162,26 @@ public class Calificacion implements Serializable {
 				return false;
 		} else if (!matriculas.equals(other.matriculas))
 			return false;
-		if (nota_deberes == null) {
-			if (other.nota_deberes != null)
+		if (notaDeberes == null) {
+			if (other.notaDeberes != null)
 				return false;
-		} else if (!nota_deberes.equals(other.nota_deberes))
+		} else if (!notaDeberes.equals(other.notaDeberes))
 			return false;
-		if (nota_examen == null) {
-			if (other.nota_examen != null)
+		if (notaExamen == null) {
+			if (other.notaExamen != null)
 				return false;
-		} else if (!nota_examen.equals(other.nota_examen))
+		} else if (!notaExamen.equals(other.notaExamen))
 			return false;
-		if (nota_trabajos_clase == null) {
-			if (other.nota_trabajos_clase != null)
+		if (notaTrabajosGrupales == null) {
+			if (other.notaTrabajosGrupales != null)
 				return false;
-		} else if (!nota_trabajos_clase.equals(other.nota_trabajos_clase))
+		} else if (!notaTrabajosGrupales.equals(other.notaTrabajosGrupales))
 			return false;
-		if (nota_trabajos_grupales == null) {
-			if (other.nota_trabajos_grupales != null)
+		if (notaTrabajos_clase == null) {
+			if (other.notaTrabajos_clase != null)
 				return false;
-		} else if (!nota_trabajos_grupales.equals(other.nota_trabajos_grupales))
+		} else if (!notaTrabajos_clase.equals(other.notaTrabajos_clase))
 			return false;
 		return true;
 	}
-
 }
