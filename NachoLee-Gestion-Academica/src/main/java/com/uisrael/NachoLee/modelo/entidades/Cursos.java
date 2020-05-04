@@ -12,17 +12,18 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
+@Table(name="Cursos")
 public class Cursos implements Serializable {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 5160822006386390735L;
-
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
