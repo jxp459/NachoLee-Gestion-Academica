@@ -19,7 +19,7 @@ public class Calificacion implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_calificacion")
 	private long idCalificacion;
 	@Column(name = "nota_deberes")

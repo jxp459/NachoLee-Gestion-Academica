@@ -21,7 +21,7 @@ public class Rol implements Serializable {
 	@Id
 	/* @GeneratedValue(strategy = GenerationType.AUTO) */
 
-	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
 	@Column(name="id_rol")
 	private long idRol;

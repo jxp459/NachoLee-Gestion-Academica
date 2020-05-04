@@ -28,7 +28,7 @@ public class Usuarios implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
 	@Column(name="id_usuarios")
 	private Long idUsuarios;
@@ -64,7 +64,6 @@ public class Usuarios implements Serializable {
 	private String confirmPassword;
 
 	@ManyToMany(fetch = FetchType.LAZY)
-	// @ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "rol_usuario", joinColumns = @JoinColumn(name = "id_usuarios"), inverseJoinColumns = @JoinColumn(name = "id_rol"))
 	private Set<Rol> roles;
 

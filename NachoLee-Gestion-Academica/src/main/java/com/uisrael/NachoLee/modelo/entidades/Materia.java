@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
@@ -21,7 +23,7 @@ public class Materia implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
 	@Column(name="id_materia")
 	private long idMateria;
@@ -29,7 +31,11 @@ public class Materia implements Serializable {
 	private String nombre;
 	@Column(length = 50)
 	private String Descripcion;
-
+	
+	@ManyToOne
+	@JoinColumn(name = "id_curso", referencedColumnName = "id_curso", insertable = false, updatable = false)
+	private Cursos curso;
+	
 	public Materia() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -62,6 +68,14 @@ public class Materia implements Serializable {
 
 	public void setDescripcion(String descripcion) {
 		Descripcion = descripcion;
+	}
+
+	public Cursos getCurso() {
+		return curso;
+	}
+
+	public void setCurso(Cursos curso) {
+		this.curso = curso;
 	}
 
 	@Override
