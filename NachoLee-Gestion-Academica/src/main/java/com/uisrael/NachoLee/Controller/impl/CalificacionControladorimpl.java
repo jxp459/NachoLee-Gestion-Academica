@@ -1,11 +1,11 @@
-package com.uisrael.NachoLee.modelo.dao.impl;
+package com.uisrael.NachoLee.Controller.impl;
 
 import java.util.List;
 
-import com.uisrael.NachoLee.modelo.dao.CalificacionDAO;
+import com.uisrael.NachoLee.Controller.CalificacionControlador;
 import com.uisrael.NachoLee.modelo.entidades.Calificacion;
 
-public class CalificacionDAOimpl implements CalificacionDAO{
+public class CalificacionControladorimpl implements CalificacionControlador{
 
 	@Override
 	public void insertarCalificacion(Calificacion nuevaCalificacion) {
@@ -14,7 +14,7 @@ public class CalificacionDAOimpl implements CalificacionDAO{
 	}
 
 	@Override
-	public List<Calificacion> listarCalificacion() {
+	public List<Calificacion> listarCalificacion(Calificacion calificacion) {
 		// TODO Auto-generated method stub
 		return null;
 	}

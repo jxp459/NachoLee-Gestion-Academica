@@ -13,13 +13,15 @@ import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.JoinColumn;
 
 @Entity
-@Table(name="Usuarios")
+@Table(name = "Usuarios")
 public class Usuarios implements Serializable {
 
 	/**
@@ -30,7 +32,7 @@ public class Usuarios implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "native")
 	@GenericGenerator(name = "native", strategy = "native")
-	@Column(name="id_usuarios")
+	@Column(name = "id_usuarios")
 	private Long idUsuarios;
 
 	@Column(name = "nombres", length = 25)
@@ -50,10 +52,10 @@ public class Usuarios implements Serializable {
 
 	@Column(name = "tipo_documento", length = 1)
 	private String tipoDocumento;
-
-	@Column(name="fecha_nacimiento")
+	@Column()
+	@Temporal(TemporalType.DATE)
 	private Date fechaNacimiento;
-	
+
 	@Column(name = "numero_documento", length = 13, unique = true)
 	private String numeroDocumento;
 

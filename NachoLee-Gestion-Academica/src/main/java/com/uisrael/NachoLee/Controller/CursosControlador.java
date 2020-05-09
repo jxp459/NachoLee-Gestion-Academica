@@ -1,9 +1,10 @@
-package com.uisrael.NachoLee.modelo.dao;
+package com.uisrael.NachoLee.Controller;
 
 import java.util.List;
+
 import com.uisrael.NachoLee.modelo.entidades.Cursos;
 
-public interface CursosDAO {
+public interface CursosControlador {
 	public void insertarCurso(Cursos nuevoCurso);
 	public List<Cursos> listarCursos();
 	public void eliminarCursos(Cursos curso);

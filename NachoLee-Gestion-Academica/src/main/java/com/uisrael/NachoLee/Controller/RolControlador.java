@@ -1,10 +1,10 @@
-package com.uisrael.NachoLee.modelo.dao;
+package com.uisrael.NachoLee.Controller;
 
 import java.util.List;
 
 import com.uisrael.NachoLee.modelo.entidades.Rol;
 
-public interface RolDAO {
+public interface RolControlador {
 	public void insertarRol(Rol nuevoRol);
 	public List<Rol> listarRol();
 	public void eliminarRol(Rol rol);

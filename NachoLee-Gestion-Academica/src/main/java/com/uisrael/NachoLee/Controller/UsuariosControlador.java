@@ -1,14 +1,13 @@
-package com.uisrael.NachoLee.modelo.dao;
+package com.uisrael.NachoLee.Controller;
 
 import java.util.List;
 
 import com.uisrael.NachoLee.modelo.entidades.Usuarios;
 
-public interface UsuariosDAO {
-
+public interface UsuariosControlador {
 	public void insertarUsuarios(Usuarios nuevoUsuario);
 	public List<Usuarios> listarUsuarios();
-	public void eliminarUsuarios(Usuarios usuario);
-	public void actualizarUsuarios(Usuarios usuario);
+	public void eliminarUsuarios(Usuarios nuevo);
+	public void actualizarUsuarios(Usuarios nuevo);
 	public Usuarios buscarUsuarios(int idUsuario);
 }

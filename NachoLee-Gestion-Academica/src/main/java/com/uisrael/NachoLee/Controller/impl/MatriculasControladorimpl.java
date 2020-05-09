@@ -1,11 +1,11 @@
-package com.uisrael.NachoLee.modelo.dao.impl;
+package com.uisrael.NachoLee.Controller.impl;
 
 import java.util.List;
 
-import com.uisrael.NachoLee.modelo.dao.MatriculasDAO;
+import com.uisrael.NachoLee.Controller.MatriculasControlador;
 import com.uisrael.NachoLee.modelo.entidades.Matriculas;
 
-public class MatriculasDAOimpl implements MatriculasDAO{
+public class MatriculasControladorimpl implements MatriculasControlador{
 
 	@Override
 	public void insertarMatriculas(Matriculas nuevaMatricula) {
@@ -36,5 +36,4 @@ public class MatriculasDAOimpl implements MatriculasDAO{
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }

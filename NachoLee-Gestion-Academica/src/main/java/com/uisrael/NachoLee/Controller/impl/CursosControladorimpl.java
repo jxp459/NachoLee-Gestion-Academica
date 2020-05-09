@@ -1,11 +1,11 @@
-package com.uisrael.NachoLee.modelo.dao.impl;
+package com.uisrael.NachoLee.Controller.impl;
 
 import java.util.List;
 
-import com.uisrael.NachoLee.modelo.dao.CursosDAO;
+import com.uisrael.NachoLee.Controller.CursosControlador;
 import com.uisrael.NachoLee.modelo.entidades.Cursos;
 
-public class CursosDAOimpl implements CursosDAO{
+public class CursosControladorimpl implements CursosControlador{
 
 	@Override
 	public void insertarCurso(Cursos nuevoCurso) {
@@ -36,4 +36,5 @@ public class CursosDAOimpl implements CursosDAO{
 		// TODO Auto-generated method stub
 		return null;
 	}
+
 }

@@ -1,11 +1,11 @@
-package com.uisrael.NachoLee.modelo.dao.impl;
+package com.uisrael.NachoLee.Controller.impl;
 
 import java.util.List;
 
-import com.uisrael.NachoLee.modelo.dao.UsuariosDAO;
+import com.uisrael.NachoLee.Controller.UsuariosControlador;
 import com.uisrael.NachoLee.modelo.entidades.Usuarios;
 
-public class UsuariosDAOimpl implements UsuariosDAO{
+public class UsuariosControladorimpl implements UsuariosControlador {
 
 	@Override
 	public void insertarUsuarios(Usuarios nuevoUsuario) {
@@ -20,13 +20,13 @@ public class UsuariosDAOimpl implements UsuariosDAO{
 	}
 
 	@Override
-	public void eliminarUsuarios(Usuarios usuario) {
+	public void eliminarUsuarios(Usuarios nuevo) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void actualizarUsuarios(Usuarios usuario) {
+	public void actualizarUsuarios(Usuarios nuevo) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -36,5 +36,5 @@ public class UsuariosDAOimpl implements UsuariosDAO{
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
 }

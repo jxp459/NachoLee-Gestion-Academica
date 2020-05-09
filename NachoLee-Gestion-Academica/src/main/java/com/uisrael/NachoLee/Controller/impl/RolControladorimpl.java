@@ -1,11 +1,11 @@
-package com.uisrael.NachoLee.modelo.dao.impl;
+package com.uisrael.NachoLee.Controller.impl;
 
 import java.util.List;
 
-import com.uisrael.NachoLee.modelo.dao.RolDAO;
+import com.uisrael.NachoLee.Controller.RolControlador;
 import com.uisrael.NachoLee.modelo.entidades.Rol;
 
-public class RolDAOimpl implements RolDAO{
+public class RolControladorimpl implements RolControlador{
 
 	@Override
 	public void insertarRol(Rol nuevoRol) {
