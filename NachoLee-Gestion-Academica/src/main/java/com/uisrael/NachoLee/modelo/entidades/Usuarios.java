@@ -16,7 +16,6 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.JoinColumn;
 
@@ -30,8 +29,8 @@ public class Usuarios implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "native")
-	@GenericGenerator(name = "native", strategy = "native")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)/*, generator = "native")
+	@GenericGenerator(name = "native", strategy = "native")*/
 	@Column(name = "id_usuarios")
 	private Long idUsuarios;
 

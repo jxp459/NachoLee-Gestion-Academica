@@ -8,7 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.hibernate.annotations.GenericGenerator;
+
 
 @Entity
 @Table(name="Rol")
@@ -21,8 +21,8 @@ public class Rol implements Serializable {
 	@Id
 	/* @GeneratedValue(strategy = GenerationType.AUTO) */
 
-	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "native")
-	@GenericGenerator(name = "native", strategy = "native")
+	@GeneratedValue(strategy = GenerationType.IDENTITY/*, generator = "native"*/)
+	/*@GenericGenerator(name = "native", strategy = "native")*/
 	@Column(name="id_rol")
 	private long idRol;
 

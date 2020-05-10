@@ -3,14 +3,16 @@ package com.uisrael.NachoLee.Controller.impl;
 import java.util.List;
 
 import com.uisrael.NachoLee.Controller.RolControlador;
+import com.uisrael.NachoLee.modelo.dao.RolDAO;
+import com.uisrael.NachoLee.modelo.dao.impl.RolDAOimpl;
 import com.uisrael.NachoLee.modelo.entidades.Rol;
 
 public class RolControladorimpl implements RolControlador{
-
+private RolDAO rolDao;
 	@Override
 	public void insertarRol(Rol nuevoRol) {
-		// TODO Auto-generated method stub
-		
+		rolDao=new RolDAOimpl();//implementacion
+		rolDao.insertarRol(nuevoRol);
 	}
 
 	@Override
