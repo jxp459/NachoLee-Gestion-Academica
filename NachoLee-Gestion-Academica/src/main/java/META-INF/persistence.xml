@@ -5,6 +5,7 @@
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		
 		<class>com.uisrael.NachoLee.modelo.entidades.Rol</class>
+		<class>com.uisrael.NachoLee.modelo.entidades.RolUsuario</class>
 		<class>com.uisrael.NachoLee.modelo.entidades.Usuarios</class>
   		<class>com.uisrael.NachoLee.modelo.entidades.Calificacion</class>
   		<class>com.uisrael.NachoLee.modelo.entidades.Cursos</class>
@@ -13,7 +14,7 @@
 		
         <properties>
             <property  name = "javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-            <property  name = "javax.persistence.jdbc.url"  value = "jdbc:postgresql://localhost:8080/deberes_nacho_lee"/> 
+            <property  name = "javax.persistence.jdbc.url"  value = "jdbc:postgresql://localhost:8080/postgres"/> 
             <property  name = "javax.persistence.jdbc.user"  value = "postgres"/> 
             <property  name = "javax.persistence.jdbc.password" value = "1234" />
             <property name="javax.persistence.schema-generation.database.action" value = "create"/>   

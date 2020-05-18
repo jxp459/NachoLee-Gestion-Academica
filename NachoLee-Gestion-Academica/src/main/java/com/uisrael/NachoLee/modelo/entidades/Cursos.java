@@ -1,11 +1,16 @@
 package com.uisrael.NachoLee.modelo.entidades;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -28,6 +33,11 @@ public class Cursos implements Serializable {
 	@Column(length = 50)
 	private String descripcion;
 
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "fkCurso")
+	private List<Materia> listaMateria=new ArrayList<Materia>();
+	
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "fkCurso")
+	private List<Matriculas> listaMatriculas=new ArrayList<Matriculas>();
 	
 	public Cursos() {
 		super();
@@ -61,6 +71,14 @@ public class Cursos implements Serializable {
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+
+	public List<Materia> getListaMateria() {
+		return listaMateria;
+	}
+
+	public void setListaMateria(List<Materia> listaMateria) {
+		this.listaMateria = listaMateria;
 	}
 
 	@Override

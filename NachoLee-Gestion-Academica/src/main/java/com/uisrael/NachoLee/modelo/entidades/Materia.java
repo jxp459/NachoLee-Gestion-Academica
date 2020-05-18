@@ -1,14 +1,19 @@
 package com.uisrael.NachoLee.modelo.entidades;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -30,9 +35,15 @@ public class Materia implements Serializable {
 	@Column(length = 50)
 	private String Descripcion;
 	
-	@ManyToOne
+	@ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+	@JoinColumn(name = "fkCurso")
+	private Cursos fkCurso;
+	/*@ManyToOne
 	@JoinColumn(name = "id_curso", referencedColumnName = "id_curso", insertable = false, updatable = false)
-	private Cursos curso;
+	private Cursos curso;*/
+	
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "fkMateria")
+	private List<Calificacion> listaCalificacion=new ArrayList<Calificacion>();
 	
 	public Materia() {
 		super();
@@ -68,12 +79,22 @@ public class Materia implements Serializable {
 		Descripcion = descripcion;
 	}
 
-	public Cursos getCurso() {
-		return curso;
+
+
+	public Cursos getFkCurso() {
+		return fkCurso;
 	}
 
-	public void setCurso(Cursos curso) {
-		this.curso = curso;
+	public void setFkCurso(Cursos fkCurso) {
+		this.fkCurso = fkCurso;
+	}
+
+	public List<Calificacion> getListaCalificacion() {
+		return listaCalificacion;
+	}
+
+	public void setListaCalificacion(List<Calificacion> listaCalificacion) {
+		this.listaCalificacion = listaCalificacion;
 	}
 
 	@Override
@@ -81,38 +102,5 @@ public class Materia implements Serializable {
 		return "Materia [id_materia=" + idMateria + ", nombre=" + nombre + ", Descripcion=" + Descripcion + "]";
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((Descripcion == null) ? 0 : Descripcion.hashCode());
-		result = prime * result + (int) (idMateria ^ (idMateria >>> 32));
-		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Materia other = (Materia) obj;
-		if (Descripcion == null) {
-			if (other.Descripcion != null)
-				return false;
-		} else if (!Descripcion.equals(other.Descripcion))
-			return false;
-		if (idMateria != other.idMateria)
-			return false;
-		if (nombre == null) {
-			if (other.nombre != null)
-				return false;
-		} else if (!nombre.equals(other.nombre))
-			return false;
-		return true;
-	}
 
 }

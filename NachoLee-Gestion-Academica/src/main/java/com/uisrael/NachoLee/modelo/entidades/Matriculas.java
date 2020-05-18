@@ -1,13 +1,19 @@
 package com.uisrael.NachoLee.modelo.entidades;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -40,14 +46,23 @@ public class Matriculas implements Serializable {
 		this.idMatricula = idMatricula;
 	}
 
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "fkMatriculas")
+	private List<Calificacion> listaCalificacion=new ArrayList<Calificacion>();
+	/*
 	@ManyToOne
 	@JoinColumn(name = "id_curso", referencedColumnName = "id_curso", insertable = false, updatable = false)
-	private Cursos cursos;
-
-	@ManyToOne
+	private Cursos cursos;*/
+	@ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+	@JoinColumn(name = "fkCurso")
+	private Cursos fkCurso;
+	
+	@ManyToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+	@JoinColumn(name = "fkUsuario")
+	private Usuarios fkUsuario;
+	/*@ManyToOne
 	@JoinColumn(name = "id_estudiante", referencedColumnName = "id_usuarios", insertable = false, updatable = false)
-	private Usuarios usuarios;
-
+	private Usuarios usuarios;*/
+	
 	public long getIdMatricula() {
 		return idMatricula;
 	}
@@ -64,66 +79,35 @@ public class Matriculas implements Serializable {
 		this.anoLectivo = anoLectivo;
 	}
 
-	public Cursos getCursos() {
-		return cursos;
+	public Cursos getFkCurso() {
+		return fkCurso;
 	}
 
-	public void setCursos(Cursos cursos) {
-		this.cursos = cursos;
+	public void setFkCurso(Cursos fkCurso) {
+		this.fkCurso = fkCurso;
 	}
 
-	public Usuarios getUsuarios() {
-		return usuarios;
+	public Usuarios getFkUsuario() {
+		return fkUsuario;
 	}
 
-	public void setUsuarios(Usuarios usuarios) {
-		this.usuarios = usuarios;
+	public void setFkUsuario(Usuarios fkUsuario) {
+		this.fkUsuario = fkUsuario;
 	}
 
 	@Override
 	public String toString() {
-		return "Matriculas [id_matricula=" + idMatricula + ", ano_lectivo=" + anoLectivo + ", cursos=" + cursos
-				+ ", usuarios=" + usuarios + "]";
+		return "Matriculas [id_matricula=" + idMatricula + ", ano_lectivo=" + anoLectivo + ", cursos=" + fkCurso
+				+ ", usuarios=" + fkUsuario + "]";
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((anoLectivo == null) ? 0 : anoLectivo.hashCode());
-		result = prime * result + ((cursos == null) ? 0 : cursos.hashCode());
-		result = prime * result + (int) (idMatricula ^ (idMatricula >>> 32));
-		result = prime * result + ((usuarios == null) ? 0 : usuarios.hashCode());
-		return result;
+	public List<Calificacion> getListaCalificacion() {
+		return listaCalificacion;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Matriculas other = (Matriculas) obj;
-		if (anoLectivo == null) {
-			if (other.anoLectivo != null)
-				return false;
-		} else if (!anoLectivo.equals(other.anoLectivo))
-			return false;
-		if (cursos == null) {
-			if (other.cursos != null)
-				return false;
-		} else if (!cursos.equals(other.cursos))
-			return false;
-		if (idMatricula != other.idMatricula)
-			return false;
-		if (usuarios == null) {
-			if (other.usuarios != null)
-				return false;
-		} else if (!usuarios.equals(other.usuarios))
-			return false;
-		return true;
+	public void setListaCalificacion(List<Calificacion> listaCalificacion) {
+		this.listaCalificacion = listaCalificacion;
 	}
+
 
 }

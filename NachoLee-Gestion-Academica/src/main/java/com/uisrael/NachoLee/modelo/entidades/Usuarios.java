@@ -1,23 +1,22 @@
 package com.uisrael.NachoLee.modelo.entidades;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.Set;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
-import javax.persistence.JoinColumn;
 
 @Entity
 @Table(name = "Usuarios")
@@ -40,10 +39,10 @@ public class Usuarios implements Serializable {
 	@Column(name = "apellidos", length = 25)
 	private String apellidos;
 
-	@Column(name = "correo", length = 30, unique = true)
+	@Column(name = "correo", length = 30/*, unique = true*/)
 	private String correo;
 
-	@Column(name = "usuario", length = 20, unique = true)
+	@Column(name = "usuario", length = 20/*, unique = true*/)
 	private String usuario;
 
 	@Column(name = "contraseña", length = 30)
@@ -55,19 +54,24 @@ public class Usuarios implements Serializable {
 	@Temporal(TemporalType.DATE)
 	private Date fechaNacimiento;
 
-	@Column(name = "numero_documento", length = 13, unique = true)
+	@Column(name = "numero_documento", length = 13/*, unique = true*/)
 	private String numeroDocumento;
 
-	@Column(name = "id_usuario_representante", length = 13, unique = true)
+	@Column(name = "id_usuario_representante", length = 13)
 	private String idUsuarioRepresentante;
 
 	@Transient
 	private String confirmPassword;
 
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "fkUsuario")
+	private List<Matriculas> listaMatriculas=new ArrayList<Matriculas>();
+	/*
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "rol_usuario", joinColumns = @JoinColumn(name = "id_usuarios"), inverseJoinColumns = @JoinColumn(name = "id_rol"))
-	private Set<Rol> roles;
-
+	private List<Rol> listaRol=new ArrayList<Rol>();
+*/
+	@OneToMany(cascade = CascadeType.ALL,mappedBy = "fkUsuario")
+	private List<RolUsuario> listaRolUsuario=new ArrayList<RolUsuario>();
 	public Usuarios() {
 		super();
 	}
@@ -157,11 +161,38 @@ public class Usuarios implements Serializable {
 		this.idUsuarioRepresentante = idUsuarioRepresentante;
 	}
 
-	public Set<Rol> getRoles() {
-		return roles;
+	public Date getFechaNacimiento() {
+		return fechaNacimiento;
 	}
 
-	public void setRoles(Set<Rol> roles) {
-		this.roles = roles;
+	public void setFechaNacimiento(Date fechaNacimiento) {
+		this.fechaNacimiento = fechaNacimiento;
 	}
+
+	public List<Matriculas> getListaMatriculas() {
+		return listaMatriculas;
+	}
+
+	public void setListaMatriculas(List<Matriculas> listaMatriculas) {
+		this.listaMatriculas = listaMatriculas;
+	}
+
+	public List<RolUsuario> getListaRolUsuario() {
+		return listaRolUsuario;
+	}
+
+	public void setListaRolUsuario(List<RolUsuario> listaRolUsuario) {
+		this.listaRolUsuario = listaRolUsuario;
+	}
+
+	@Override
+	public String toString() {
+		return "Usuarios [idUsuarios=" + idUsuarios + ", nombres=" + nombres + ", apellidos=" + apellidos + ", correo="
+				+ correo + ", usuario=" + usuario + ", contraseña=" + contraseña + ", tipoDocumento=" + tipoDocumento
+				+ ", fechaNacimiento=" + fechaNacimiento + ", numeroDocumento=" + numeroDocumento
+				+ ", idUsuarioRepresentante=" + idUsuarioRepresentante + ", confirmPassword=" + confirmPassword
+				+ ", listaMatriculas=" + listaMatriculas + ", listaRol=" + listaRolUsuario + "]";
+	}
+
+	
 }
